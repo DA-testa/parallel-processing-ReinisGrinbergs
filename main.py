@@ -8,7 +8,7 @@ def parallel_processing(n, m, data):
     # create the output pairs
 
     for y in range(m):
-        xMin = min(enumerate(threads), key=lambda x:x[1])
+        xMin = min(enumerate(t), key=lambda x:x[1])
         output.append((xMin[0], t[xMin[0]]))
         t[xMin[0]] += data[y]
 
